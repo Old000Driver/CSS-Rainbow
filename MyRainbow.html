@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Rainbow</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+.rainbow {
+  height: 200px;
+  overflow:hidden;
+}
+body{
+  background: white; /*自动填充背景色：当body背景变为白色时整个浏览器背景颜色也变                        为白色*/
+}
+.rainbow div{
+  overflow: hidden;
+}
+.rainbow > div{ /*表示rainbow下的第一个div*/
+  width: 400px;
+  height: 400px;
+  background: red;
+  border-radius: 50%; /*当高度宽度相同时用border-radius可使图形变圆*/
+}
+.rainbow > div > div{
+  background: hsl(60, 80%, 50%);
+  height: 380px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div >div{
+  background: hsl(120, 80%, 50%);
+  height: 360px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div >div >div{
+  background: hsl(180, 80%, 50%);
+  height: 340px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div >div > div> div{
+  background: hsl(240, 80%, 50%);
+  height: 320px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div >div > div> div >div{
+  background: hsl(300, 80%, 50%);
+  height: 300px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div >div > div> div >div > div{
+  background: hsl(340, 80%, 50%);
+  height: 280px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.rainbow > div > div >div > div> div >div > div >div{
+  background: hsl(340, 80%, 100%);
+  height: 260px;
+  margin: 10px;
+  border-radius: 50%;
+}
+</style>
+<body>
+    <div class="rainbow">
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
